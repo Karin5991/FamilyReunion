@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript">
+<!-->
+var image1=new Image()
+image1.src="imageone.jpg"
+
+var image2=new Image()
+image2.src="imagetwo.jpg"
+
+var image3=new Image()
+image3.src="imagethree.jpg"
+
+var image4=new Image()
+image4.src="imagefour.jpg"
+//-->
+</script>
+</head>
+
+<body>
+<img src="imageone.jpg" name="slide" width="550" height="360">
+<script type="text/javascript">
+<!--
+var step=1
+function slideit(){
+	document.images.slide.src=eval("image"+step+".src")
+	if(step<4)
+		step++
+	else
+		step=1
+	setTimeout("slideit()",2500)
+}
+slideit()
+//-->
+</script>
+
+
+
+<h1>Family Reunion</h1>
+
+<a href="#">Family News</a>
+<a href="#">Photo Gallery</a>
+<a href="#">Events Calendar</a>
+
+<h1>Join us for the biggest family party of the year.</h1>
+
+
+</body>
+</html>
