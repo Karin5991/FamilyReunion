@@ -139,8 +139,8 @@ h2 {
 }
 
 p {
-	line-height: 1px;
-	
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 h3 {
@@ -158,6 +158,7 @@ h3 {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	float:left;
 }
 
 
@@ -189,6 +190,9 @@ display: none;
 #pics {
 width:442px;
 height:647px;
+float:right;
+margin-left: auto;
+margin-right: auto;
 }
 
 
