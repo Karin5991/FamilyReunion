@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link type="text/css" rel="stylesheet" href="onefamily.css"/>
+
+
+
+	<script src="/js/jquery.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	</--
+
+	//-->
+
+
+$(function () {
+	$('img.fade').each(function () {
+		var $$ = $(this);
+
+		var target = $$.css('background-image').replace(/^url|[\)\(]/g, '');
+		
+		$$.wrap('span style="position: relative;"></span')
+		    .parent() // span elements
+		    .prepend('<img');
+		    .attr('src', target);
+
+		$$.css( {
+		    'position' = 'absolute',
+		    'right' : 0,
+		    'top' : this.offsetTop
+		}) 
+
+        $$.hover(function (){
+            $$.stop().animate({
+		        opacity: 0
+		       }, 250);
+		       
+		}, function () {
+			$$.stop().animate({
+				opacity: 1
+	    }, 3000);
+      })
+	});
+ });
+//-->
+</script>
+</head>
+
+<body>
+
+	<div class="float"><img class="fade" src="vgraphic1.jpg" style="background-image: url(vgraphicback.pg);" /></div>
+	<div class="float"><img class="fade" src="vgraphic2.jpg" style="background-image: url(vgraphicback.pg);" /></div>
+	<div class="float"><img class="fade" src="vgraphic3.jpg" style="background-image: url(vgraphicback.pg);" /></div>
+
+
+
+</body>
+</html>
