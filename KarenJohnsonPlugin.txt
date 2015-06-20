@@ -1,0 +1,13 @@
+Karen Johnson
+June 13, 2015
+
+SocialSharing Plugin - This plugin allows you to use the native sharing window of your mobile device.
+
+
+Toast Plugin - This plugin allows you to show a native text popup. 
+You can use this to show feedback from people
+
+
+Pushwoosh – This plugin allows you to send and receive push notifications. 
+
+
